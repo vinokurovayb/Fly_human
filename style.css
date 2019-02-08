@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@keyframes fire {
+    100% {
+        transform: rotate(10deg);
+    }
+}
+@keyframes fly {
+    100% {
+        left: 35%;
+        top: 25%;
+    }
+}
+@keyframes cloud {
+    100% {
+        top: 900px;
+        left: 100px;
+    }
+}
+@keyframes cloud1 {
+    100% {
+        top: 900px;
+        left: 200px;
+    }
+}
+@keyframes cloud2 {
+    100% {
+        top: 900px;
+        left: 200px;
+    }
+}
+body {
+    background: black;
+}
+.back {
+    background: lightblue;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.fly {
+    /* right: 0; */
+    left: 45%;
+    /* bottom: 0; */
+    top: 40%;
+    /* margin: auto; */
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    animation: fly 2s infinite alternate;
+
+}
+.human {
+    background: url(images/hombre.png) center center / contain no-repeat;
+    height: 150px;
+    width: 100px;
+    position: relative;
+    z-index: 1;
+}
+.fire {
+    background: url(images/fuego.png) center center / contain no-repeat;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    right: -4px;
+    bottom: -3px;
+    animation: fire 0.05s infinite alternate;
+}
+.cloud {
+    background: url(images/nube1.png) center center / contain no-repeat;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: -90px;
+    left: 15px;
+    animation: cloud 3s infinite;
+}
+.cloud1 {
+    background: url(images/nube2.png) center center / contain no-repeat;
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    animation: cloud1 3.5s infinite;
+}
+.cloud2 {
+    background: url(images/nube3.png) center center / contain no-repeat;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: -70px;
+    left: 270px;
+    animation: cloud2 4s infinite;
+}
